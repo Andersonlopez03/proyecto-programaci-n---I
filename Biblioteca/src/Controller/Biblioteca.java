@@ -93,7 +93,7 @@ public class Biblioteca {
         for (Libros libroAux : libros) {
             if (libroAux.getISBN().equals(ISBN)) {
                
-                return "El Libro ingresado ya existe";
+                return "El usuario ingresado ya existe";
             }
         }
 
@@ -324,7 +324,7 @@ public class Biblioteca {
         }
 
         if (usuarioEncontrado == null) {
-            return " Error: No se encontró un usuario con el DNI " + Cedulap ;
+            return " Error: No se encontró un usuario con la cedula " + Cedulap ;
         }
 
         Libros libroEncontrado = null;
